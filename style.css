@@ -1,0 +1,742 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+
+a.nav-link {
+    color: white;
+}
+
+a.nav-link:hover {
+    color: #e65f78;
+    transition: all 0.5s;
+}
+
+/* Hero Section */
+
+.header {
+    background-image: url(assets/img/header-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.header-text {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.heading-2::after {
+    content: '';
+    animation: transform 15s infinite normal;
+}
+
+@keyframes transform {
+    0% {
+        content: 'H |';
+    }
+
+    1% {
+        content: 'HI |';
+    }
+
+    2% {
+        content: 'H |';
+    }
+
+    3% {
+        content: ' |';
+    }
+
+    4% {
+        content: 'M |';
+    }
+
+    5% {
+        content: 'MY |';
+    }
+
+    6% {
+        content: 'MY N |';
+    }
+
+    7% {
+        content: 'MY NA |';
+    }
+
+    8% {
+        content: 'MY NAM |';
+    }
+
+    9% {
+        content: 'MY NAME |';
+    }
+
+    10% {
+        content: 'MY NAME  |';
+    }
+
+    11% {
+        content: 'MY NAME I |';
+    }
+
+    12% {
+        content: 'MY NAME IS |';
+    }
+
+    13% {
+        content: 'MY NAME IS  |';
+    }
+
+    14% {
+        content: 'MY NAME IS H |';
+    }
+
+    15% {
+        content: 'MY NAME IS HA |';
+    }
+
+    16% {
+        content: 'MY NAME IS HAS |';
+    }
+
+    17% {
+        content: 'MY NAME IS HASE |';
+    }
+
+    18% {
+        content: 'MY NAME IS HASEE |';
+    }
+
+    19% {
+        content: 'MY NAME IS HASEEB  |';
+    }
+
+    20% {
+        content: 'MY NAME IS HASEEB S |';
+    }
+
+    21% {
+        content: 'MY NAME IS HASEEB SH |';
+    }
+
+    22% {
+        content: 'MY NAME IS HASEEB SHA |';
+    }
+
+    23% {
+        content: 'MY NAME IS HASEEB SHAH |';
+    }
+
+    24% {
+        content: 'MY NAME IS HASEEB SHA |';
+    }
+
+    25% {
+        content: 'MY NAME IS HASEEB SH |';
+    }
+
+    26% {
+        content: 'MY NAME IS HASEEB S |';
+    }
+
+    27% {
+        content: 'MY NAME IS HASEEB |';
+    }
+
+    28% {
+        content: 'MY NAME IS HASEE |';
+    }
+
+    29% {
+        content: 'MY NAME IS HASE |';
+    }
+
+    30% {
+        content: 'MY NAME IS HAS |';
+    }
+
+    31% {
+        content: 'MY NAME IS HA |';
+    }
+
+    32% {
+        content: 'MY NAME IS H |';
+    }
+
+    /* 33% {
+        content: 'MY NAME IS H |';
+    } */
+
+    34% {
+        content: 'MY NAME IS |';
+    }
+
+    35% {
+        content: 'MY NAME I |';
+    }
+
+    36% {
+        content: 'MY NAME  |';
+    }
+
+    37% {
+        content: 'MY NAME |';
+    }
+
+    38% {
+        content: 'MY NAM |';
+    }
+
+    39% {
+        content: 'MY NA |';
+    }
+
+    40% {
+        content: 'MY N |';
+    }
+
+    41% {
+        content: 'MY  |';
+    }
+
+    42% {
+        content: 'MY |';
+    }
+
+    43% {
+        content: 'M |';
+    }
+
+    44% {
+        content: 'T |';
+    }
+
+    45% {
+        content: 'TH |';
+    }
+
+    46% {
+        content: 'THA |';
+    }
+
+    47% {
+        content: 'THAN |';
+    }
+
+    48% {
+        content: 'THANK |';
+    }
+
+    49% {
+        content: 'THANK  |';
+    }
+
+    50% {
+        content: 'THANK Y |';
+    }
+
+    51% {
+        content: 'THANK YO |';
+    }
+
+    52% {
+        content: 'THANK YOU |';
+    }
+
+    53% {
+        content: 'THANK YO |';
+    }
+
+    54% {
+        content: 'THANK Y |';
+    }
+
+    55% {
+        content: 'THANK  |';
+    }
+
+    56% {
+        content: 'THANK |';
+    }
+
+    57% {
+        content: 'THAN |';
+    }
+
+    58% {
+        content: 'THA |';
+    }
+
+    59% {
+        content: 'TH |';
+    }
+
+    60% {
+        content: 'T |';
+    }
+
+    61% {
+        content: ' |';
+    }
+
+    62% {
+        content: 'M |';
+    }
+
+    63% {
+        content: 'MA |';
+    }
+
+    64% {
+        content: 'MA\0027 |';
+    }
+
+    65% {
+        content: 'MA\0027 A |';
+    }
+
+    66% {
+        content: 'MA\0027 AM |';
+    }
+
+    67% {
+        content: 'MA\0027 AM   |';
+    }
+
+    68% {
+        content: 'MA\0027 AM R |';
+    }
+
+    69% {
+        content: 'MA\0027 AM RU |';
+    }
+
+    70% {
+        content: 'MA\0027 AM RUB |';
+    }
+
+    71% {
+        content: 'MA\0027 AM RUBA |';
+    }
+
+    72% {
+        content: 'MA\0027 AM RUBAB |';
+    }
+
+    73% {
+        content: 'MA\0027 AM RUBAB  |';
+    }
+
+    74% {
+        content: 'MA\0027 AM RUBA |';
+    }
+
+    75% {
+        content: 'MA\0027 AM RUB |';
+    }
+
+    76% {
+        content: 'MA\0027 AM RU |';
+    }
+
+    77% {
+        content: 'MA\0027 AM R |';
+    }
+
+    78% {
+        content: 'MA\0027 AM  |';
+    }
+
+    79% {
+        content: 'MA\0027 AM |';
+    }
+
+    80% {
+        content: 'MA\0027 A |';
+    }
+
+    81% {
+        content: 'MA |';
+    }
+
+    82% {
+        content: 'M |';
+    }
+
+    83% {
+        content: 'T|';
+    }
+
+    84% {
+        content: 'TH |';
+    }
+
+    85% {
+        content: 'THE |';
+    }
+
+    86% {
+        content: 'THE E|';
+    }
+
+    87% {
+        content: 'THE EN |';
+    }
+
+    88% {
+        content: 'THE END. |';
+    }
+
+    89% {
+        content: 'THE END.. |';
+    }
+
+    90% {
+        content: 'THE END... |';
+    }
+
+    91% {
+        content: 'THE END.. |';
+    }
+
+    92% {
+        content: 'THE END. |';
+    }
+
+    93% {
+        content: 'THE END |';
+    }
+
+    94% {
+        content: 'THE EN |';
+    }
+
+    95% {
+        content: 'THE E |';
+    }
+
+    96% {
+        content: 'THE  |';
+    }
+
+    97% {
+        content: 'THE |';
+    }
+
+    98% {
+        content: 'TH |';
+    }
+
+    99% {
+        content: 'T |';
+    }
+
+    100% {
+        content: '|';
+    }
+
+}
+
+.header-btn {
+    padding: 7px 15px;
+    line-height: 32px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.header-btn:hover {
+    background-color: #e65f78;
+}
+
+samp {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 1;
+    border-radius: 4px;
+    padding: 4px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+samp p {
+    animation: moving 1s alternate infinite;
+}
+
+@keyframes moving {
+    0% {
+        transform: translateY(18px);
+    }
+
+    100% {
+        transform: translateY(-3px);
+    }
+}
+
+/* About Us */
+
+.about-h1 {
+    font-weight: 650;
+}
+
+.about-span {
+    font-weight: lighter;
+}
+
+.about-pink {
+    color: #e65f78;
+}
+
+.about-social span i {
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: .5s;
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.about-social span i:hover {
+    color: #e65f78;
+    border: 2px solid #e65f78;
+}
+
+/* Service */
+
+.service {
+    border: 2px solid #ddd;
+    cursor: pointer;
+}
+
+.fa-chart-column {
+    font-size: 40px;
+    color: #e65f78;
+}
+
+.service h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.service-span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #e65f78;
+    transition: .5s;
+    margin: auto;
+}
+
+.service:hover .service-span {
+    width: 60px;
+}
+
+/* Hire Us */
+
+button.btn.hire-btn {
+    background-color: #e65f78;
+    color: white;
+    border: 2px solid #e65f78;
+    border-radius: 4px;
+}
+
+/* Client */
+
+.button-tab {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
+}
+
+.button-tab:hover {
+    background-color: #e65f78;
+    color: white;
+    border: 2px solid #e65f78;
+    border-radius: 4px;
+}
+
+.description {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    flex-direction: column;
+    justify-content: center;
+    /* transform: translateY(100%); */
+    transition: .5s;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.img:hover .description {
+    cursor: pointer;
+    transform: translateY(0%);
+    opacity: 1;
+    color: white;
+    z-index: 0;
+}
+
+/* Blog */
+
+.blog-h3{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+/* Contact */
+
+.contact-i {
+    color: #e65f78;
+    font-size: 40px;
+}
+
+.contact-h3 {
+    font-weight: 400;
+}
+
+.contact-p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* Footer */
+
+footer {
+    background-color: rgba(33, 37, 41, 1);
+    height: 200px;
+}
+
+footer p{
+    font-size: larger;
+}
+
+.footer-social span i{
+    width: 42px;
+    height: 42px;
+    line-height: 32px;
+    text-align: center;
+    padding: 3px 7px;
+    border-radius: 50%;
+    color: white;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: .5s;
+    background-color: rgb(108 117 125);
+    border: 2px solid rgb(108 117 125)
+}
+
+.footer-social span i:hover{
+    color: #e65f78;
+}
+
+/* Media Query */
+
+@media (min-width:0px) and (max-width:991.5px) {
+    div#nav {
+        background-color: #fa98aa;
+    }
+}
+
+@media (min-width:600px) and (max-width:991px){
+    .about-p h2 , h3{
+        font-size: 28px;
+    }
+}
+
+@media (min-width:0) and (max-width:700px){
+    .header-btn{
+        padding: 5px 13px;
+    }
+}
+
+@media (min-width:400px) and (max-width:600px){
+    .heading-1{
+        font-size: 25px;
+    }
+
+    .heading-2{
+        font-size: 25px;
+    }
+
+    samp{
+        padding: 3px 9px;
+    }
+
+    .hero-para{
+        font-size: 15px;
+    }
+}
+
+@media (min-width:0) and (max-width:400px){
+    .heading-1, .heading-2{
+        font-size: 20px;
+    }
+
+    .hero-para{
+        font-size: 14px;
+    }
+
+    samp{
+        padding: 3px 8px;
+    }
+
+    .header-btn{
+        font-size: 13px;
+        padding: 3px 10px;
+    }
+}
+
+@media (min-width:0) and (max-width:576px){
+    section{
+        font-size: 14px;
+    }
+
+    .contact-h3 , .contact-p{
+        font-size: 20px;
+    }
+
+    .fa-solid , .fas{
+        font-size: 30px;
+    }
+
+    footer p{
+        font-size: 18px;
+    }
+
+    .footer-social span i{
+        margin: 0 8px;
+        width: 35px;
+        height: 35px;
+        padding: 0 5px;
+    }
+    
+}
+
